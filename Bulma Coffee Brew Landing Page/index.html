@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title>Ninja Coffee</title>
+        <link rel = "stylesheet" 
+              type = "text/css" 
+              href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    </head>
+    <body>
+        <nav class = "navbar has-shadow is-primary">
+            <div class = "navbar-brand">
+                <a class = "navbar-item">
+                    <img src = "assests/ninja.jpg" alt = "ninja-alt" style = "max-height: 70px;" class = "py-2 px-2">
+                </a>
+                <a class = "navbar-burger" id = "burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class = "navbar-menu" id = "nav-links">
+                <div class = "navbar-end">
+                    <a class = "navbar-item">My Account</a>
+                    <a class = "navbar-item">Shopping Cart (0)</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class = "section pt-4 pb-0">
+            <nav class = "breadcrumb has-arrow-separator">
+                <ul class = "container">
+                    <li><a>Shop</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>For You</a></li>
+                    <li class = "is-active"><a>Docker Dark Roast</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class = "section">
+            <div class = "container">
+                <div class = "columns is-vcentered is-multiline">
+                    <div class = "column is-6-tablet is-3-desktop">
+                        <h1 class = "is-size-3-mobile is-size-1-desktop title">Docker</h1>
+                        <h2 class = "is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h2>
+                        <p class = "has-text-justified">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum eveniet qui vel, quisquam sed aspernatur! 
+                            Reprehenderit expedita deleniti a, enim sapiente assumenda cumque commodi ea, rerum repellendus, quo adipisci?
+                        </p>
+                    </div>
+                    <div class = "column is-6-tablet is-5-desktop has-text-centered">
+                        <img src = "assests/roast.jpg" alt = "docker-alt" class="px-6">
+                    </div>
+                    <div class = "column is-12-tablet is-4-desktop">
+                        <div class = "is-size-4 mb-4">£10.95</div>
+                        <p class = "mb-4 has-text-justified">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sint aut asperiores reiciendis quis quod!
+                        </p>
+                        <form>
+                            <div class = "field">
+                                <div class = "control mt-3 mb-2">
+                                    <div class = "select">
+                                        <select>
+                                            <option>Small (250g)</option>
+                                            <option>Medium (500g)</option>
+                                            <option>Large (750g)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class = "button is-warning">Add To Your Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "section">
+            <div class = "container">
+                <div class = "columns is-8 is-variable">
+                    <div class = "column is-7-tablet">
+                        <div class = "tabs is-boxed">
+                            <ul>
+                                <li class = "is-active" data-target = "your-product">
+                                    <a>About Your Product</a>
+                                </li>
+                                <li data-target = "delivery-insight">
+                                    <a>Delivery Insights</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "px-2" id = "tab-content">
+                            <div id = "your-product">
+                                <h3 class = "is-size-5 title">Your Product</h3>
+                                <p class = "has-text-justified">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque ut magni animi sed nobis autem 
+                                    iure asperiores? Sint dolorem animi, voluptatem commodi facilis suscipit debitis non velit ad assumenda 
+                                    odio doloribus molestias facere. Doloribus.
+                                </p>
+                            </div>
+                            <div class = "is-hidden" id = "delivery-insight">
+                                <h3 class = "is-size-5 title">Shipment Infographic</h3>
+                                <p class = "has-text-justified">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor voluptatum vitae praesentium 
+                                    quasi minima aliquam eius expedita pariatur quo facere eligendi doloremque incidunt fugiat exercitationem 
+                                    dolores provident illo explicabo perspiciatis delectus excepturi quibusdam. Ullam.                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "column is-5-tablet">
+                        <div class = "message">
+                            <div class = "message-header">
+                                <p>Earn dividents regulary by joining us!</p>
+                            </div>
+                            <div class = "message-body">
+                                <p class = "has-text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nemo dignissimos optio nam. Mollitia 
+                                    necessitatibus nam tempora velit ipsa. Laudantium libero atque accusantium est expedita?
+                                </p>
+                                <div class = "mt-4 has-text-right">
+                                    <button class = "button is-danger" id = "sign-up">Jump In!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "section is-hidden-mobile">
+            <div class = "container">
+                <h3 class = "has-text-centered title is-size-4">Other Products For You</h3>
+                <div class = "columns mt-5 is-8 is-variable is-centered">
+                    <div class = "column is-4-tablet is-3-desktop">
+                        <div class = "card">
+                            <div class = "card-image">
+                                <img src = "assests/brazilian.jpg" alt = "brazilian-alt">
+                            </div>
+                            <div class = "card-content">
+                                <p>£12.95</p>
+                                <p class = "title is-size-5">Cortado Brazilian Brew</p>
+                            </div>
+                            <footer class = "card-footer">
+                                <p class = "card-footer-item">
+                                    <a>Learn More</a>
+                                </p>
+                                <p class = "card-footer-item">
+                                    <a>Reviews</a>
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class = "column is-4-tablet is-3-desktop">
+                        <div class = "card">
+                            <div class = "card-image">
+                                <img src = "assests/brew.jpg" alt = "brew-alt">
+                            </div>
+                            <div class = "card-content">
+                                <p>£17.37</p>
+                                <p class = "title is-size-5">Serpentine Crush Beans</p>
+                            </div>
+                            <footer class = "card-footer">
+                                <p class = "card-footer-item">
+                                    <a>Learn More</a>
+                                </p>
+                                <p class = "card-footer-item">
+                                    <a>Reviews</a>
+                                </p>
+                            </footer>
+                        </div>   
+                    </div>
+                    <div class = "column is-4-tablet is-3-desktop">
+                        <div class = "card">
+                            <div class = "card-image">
+                                <img src = "assests/sierra.jpg" alt = "sierra-alt">
+                            </div>
+                            <div class = "card-content">
+                                <p>£14.61</p>
+                                <p class = "title is-size-5">Sierra Light Roast</p>
+                            </div>
+                            <footer class = "card-footer">
+                                <p class = "card-footer-item">
+                                    <a>Learn More</a>
+                                </p>
+                                <p class = "card-footer-item">
+                                    <a>Reviews</a>
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class = "modal">
+            <div class="modal-background"></div>
+            <div class = "modal-content has-background-white py-5 px-5">
+                <h3 class = "title mb-6">Join Our Premium Membership!</h3>
+                <form>
+                    <div class = "field">
+                        <label class = "label">Name</label>
+                        <div class = "control">
+                            <input type = "text" class = "input" placeholder = "Name">
+                        </div>
+                    </div>
+                    <div class = "field">
+                        <label class = "label">Email</label>
+                        <div class = "control">
+                            <input type = "text" class = "input" placeholder = "Email">
+                        </div>
+                    </div>
+                    <div class = "field">
+                        <div class = "control">
+                            <label class = "checkbox">
+                                <input type = "checkbox">
+                                I agree to all <a>terms and conditions</a>.
+                            </label>
+                        </div>
+                    </div>
+                    <div class = "has-text-right">
+                        <button class = "button is-dark">Proceed</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class = "footer has-background-danger-light">
+            <div class = "content has-text-centered">
+                <p>Copyright &copy; 2021</p>
+                <p>All rights reserved for Ninja's</p>
+            </div>
+        </footer>
+
+        <script type = "text/javascript" src = "app.js"></script>
+    </body>
+</html>
